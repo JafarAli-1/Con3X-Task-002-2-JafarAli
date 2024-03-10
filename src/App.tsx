@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { ContractController } from "./controllers/contract_controller";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="root">
+      <div className="box-title">
+        <h1 className="title">The Current Message is :</h1>
+      </div>
+
+      <div className="box-inputs">
+        <p className="p-new-message">New Message: </p>
+        <input
+          className="input-field "
+          type="text"
+          placeholder="Type your message"
+        />
+      </div>
+
+      <div className="box-btn">
+        <button className="btn-set">Set Message</button>
+      </div>
     </div>
   );
 }
